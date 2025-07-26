@@ -15,7 +15,6 @@ const NavBar = () => {
             backgroundColor: 'transparent',
         }, {
             backgroundColor: '#00000050',
-            filter: 'blur(10px)',
             BackgroundFilter: 'blur(10px)',
             duration: 1,
             ease: 'power1.inOut'
