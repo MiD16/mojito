@@ -25,7 +25,16 @@ const Hero = () => {
             stagger: 0.06,
             delay: 1,
         });
-    }, [])
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#hero',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true,
+            }
+        }).to('.right-leaf', { y: 300 }, 0).to('.left-leaf', { y: -300 }, 0);
+    }, []);                     
   return (
     <>
     <section id='hero' className='noisy'>
