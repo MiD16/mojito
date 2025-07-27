@@ -19,6 +19,8 @@ const Hero = () => {
             duration: 1.8,
             ease: 'expo.out',
             stagger: 0.06,
+            delay: 0.25,
+            opacity: 0,
         });
 
         gsap.from(paragraphSplit.lines, {
@@ -27,7 +29,7 @@ const Hero = () => {
             duration: 1.8,
             ease: 'expo.out',
             stagger: 0.06,
-            delay: 1,
+            delay: 1.25,
         });
 
         gsap.timeline({
